@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · All 55 PS5 Trophies</title>
+<meta name="description" content="An offline guide and tracker for every Grand Theft Auto VI PlayStation 5 trophy: official names, descriptions and grades, a cited guide for each one, a roadmap to the platinum, and a checklist that saves in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <p class="eyebrow">Grand Theft Auto VI &middot; PlayStation 5 &middot; Leonida</p>
+  <h1>Leonida Trophy Guide</h1>
+  <p class="lede">Every one of the 55 trophies — official names, descriptions and grades, a guide in our own words for each one with its sources named, a roadmap to the platinum, and a checklist that saves in your browser. Works fully offline.</p>
+  <div class="progress-wrap" aria-label="Trophy progress">
+    <div class="progress-line"><strong id="progressText">0 of 55 earned</strong><span id="progressPct">0%</span></div>
+    <div class="progress-bar"><div id="progressFill" style="width:0%"></div></div>
+    <p class="grade-counts" id="gradeCounts"></p>
+  </div>
+  <nav class="view-tabs" aria-label="Views">
+    <button type="button" id="tabGuide" class="tab active" data-view="list">Trophy checklist</button>
+    <button type="button" id="tabRoadmap" class="tab" data-view="roadmap">Roadmap to the platinum</button>
+  </nav>
+</header>
+
+<main>
+  <section id="viewList" aria-label="Trophy checklist">
+    <div class="toolbar">
+      <label class="search-box">Search
+        <input id="searchInput" type="search" placeholder="Name, mission, activity…" autocomplete="off">
+      </label>
+      <label class="grade-pick">Grade
+        <select id="gradeSelect">
+          <option value="all">All grades</option>
+          <option value="platinum">Platinum</option>
+          <option value="gold">Gold</option>
+          <option value="silver">Silver</option>
+          <option value="bronze">Bronze</option>
+        </select>
+      </label>
+      <label class="spoiler-switch"><input id="spoilerToggle" type="checkbox" checked> Hide story spoilers</label>
+      <div class="io-buttons">
+        <button type="button" id="exportBtn">Export progress</button>
+        <label class="import-btn">Import progress <input id="importInput" type="file" accept="application/json,.json"></label>
+      </div>
+    </div>
+    <div class="kind-chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+    <p class="list-meta" id="listMeta"></p>
+    <div id="trophyList" class="trophy-list"></div>
+    <div id="emptyState" class="empty-state" hidden></div>
+    <noscript><p class="empty-state">This guide needs JavaScript: the checklist, filters and spoiler setting are all built in the browser. The trophy data itself lives in <code>app/data/trophies.json</code>.</p></noscript>
+    <p class="reset-row"><button type="button" id="resetBtn" class="quiet-btn">Clear all earned ticks</button></p>
+  </section>
+
+  <section id="viewRoadmap" aria-label="Roadmap to the platinum" hidden>
+    <div id="roadmapBody" class="roadmap"></div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <h2>About this guide</h2>
+  <p>Trophy names, descriptions and grades are shown exactly as PlayStation publishes them (Exophase &amp; PSNProfiles, 18 November 2026). Every guide is written for this entry, in its own words, and names its sources beside it. GTA VI launched 19 November 2026; where no method was confirmed at launch, the guide says so instead of guessing.</p>
+  <p>Sources used throughout: <a href="https://www.planetgta6.com/en/gta-6-trophies/">Planet GTA 6 — trophy list</a> · <a href="https://www.keengamer.com/articles/guides/gta-6-trophy-guide-platinum-roadmap-all-55-trophies/">KeenGamer — trophy guide &amp; platinum roadmap</a> · <a href="https://outputlag.com/guides/gta-6-trophy-list/">Output Lag — trophy list</a> · <a href="https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/">eGamers — trophy list</a>. This guide is fan-made, not affiliated with Rockstar Games, and uses no Rockstar logo, artwork or screenshots.</p>
+  <p>Progress is saved only in this browser (localStorage). Export downloads a file; import reads one back. Nothing is sent anywhere — the guide makes no network request.</p>
+</footer>
+<script type="module" src="main.js"></script>
+</body>
+</html>
